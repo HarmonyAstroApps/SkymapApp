@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skymap: Constellation Finder - Night Sky Guide</title>
+    <meta name="description" content="Explore the universe with AR. Skymap helps you identify stars, planets, and constellations in real-time. Your personal window into the cosmos.">
+    <meta name="keywords" content="skymap, constellation finder, astronomy app, stargazing, night sky, AR astronomy, planet tracker, star map">
+    <link rel="icon" type="image/png" href="public/images/icons/app-icon.png">
+    <link rel="apple-touch-icon" href="public/images/icons/app-icon.png">
+    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Stars background -->
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="public/images/icons/app-icon.png" alt="Skymap Icon" class="logo-icon">
+                <span class="logo-text">Skymap</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#download">Download</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#download">Download</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Night Sky Guide</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Skymap</span>
+                <span class="subtitle">Constellation Finder</span>
+            </h1>
+            <p class="hero-description">
+                Point your device at the sky and unlock the secrets of the universe. 
+                Identify stars, planets, and constellations in real-time with stunning AR technology.
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <i class="fab fa-apple"></i>
+                    Download for iOS
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Features
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">9+</span>
+                    <span class="stat-label">Planets</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">88</span>
+                    <span class="stat-label">Constellations</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">AR</span>
+                    <span class="stat-label">Real-time</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap App Screenshot">
+            </div>
+            <div class="orbital-ring ring-1"></div>
+            <div class="orbital-ring ring-2"></div>
+            <div class="planet planet-1"></div>
+            <div class="planet planet-2"></div>
+            <div class="planet planet-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Your Personal Planetarium</h2>
+                <p>Everything you need to explore the night sky</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Real-time AR Tracking</h3>
+                    <p>Point your device at the sky and instantly identify planets, stars, and satellites with precision augmented reality.</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Live Sky Map</h3>
+                    <p>Locate Jupiter, Saturn, Mars, Venus, Mercury, Neptune, Uranus, and Pluto with scientific accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Astronomical Data</h3>
+                    <p>Get accurate altitude, azimuth, and orbital positions for all major celestial bodies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Constellation Explorer</h3>
+                    <p>Discover constellation stories, mythology, and learn about the Milky Way and deep-space objects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Solar System Tracker</h3>
+                    <p>Track the Sun, Moon, asteroids, and exoplanets as they move through the sky in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educational Content</h3>
+                    <p>Perfect for students, teachers, and amateur astronomers to learn about the universe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Screenshots</span>
+                <h2>See the Universe</h2>
+                <p>Beautiful interface designed for cosmic exploration</p>
+            </div>
+        </div>
+        <div class="screenshot-carousel">
+            <div class="screenshot-track">
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap Screenshot 1">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/1_APP_IPHONE_67_1.png" alt="Skymap Screenshot 2">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/2_APP_IPHONE_67_2.png" alt="Skymap Screenshot 3">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/3_APP_IPHONE_67_3.png" alt="Skymap Screenshot 4">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/4_APP_IPHONE_67_4.png" alt="Skymap Screenshot 5">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/5_APP_IPHONE_67_5.png" alt="Skymap Screenshot 6">
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap Screenshot 1">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/1_APP_IPHONE_67_1.png" alt="Skymap Screenshot 2">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/2_APP_IPHONE_67_2.png" alt="Skymap Screenshot 3">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/3_APP_IPHONE_67_3.png" alt="Skymap Screenshot 4">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/4_APP_IPHONE_67_4.png" alt="Skymap Screenshot 5">
+                </div>
+                <div class="screenshot-item">
+                    <img src="public/images/screenshots/5_APP_IPHONE_67_5.png" alt="Skymap Screenshot 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-for">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who It's For</span>
+                <h2>Perfect For Explorers</h2>
+                <p>Whether you're a beginner or expert, Skymap is your companion</p>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-telescope"></i>
+                    </div>
+                    <h3>Astronomy Enthusiasts</h3>
+                    <p>Discover celestial wonders and deepen your knowledge of the cosmos with detailed astronomical data.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Students & Teachers</h3>
+                    <p>An engaging educational tool for learning about space science, planetary systems, and constellations.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h3>Stargazers & Campers</h3>
+                    <p>Make your camping trips magical by identifying stars and planets during clear night skies.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Curious Minds</h3>
+                    <p>For anyone who's ever looked up and wondered what's out there in the vast universe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="download-glow"></div>
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <span class="section-tag">Get Started</span>
+                    <h2>Start Your Astronomical Journey</h2>
+                    <p>Download Skymap now and unlock the mysteries of the night sky. Available for iOS devices.</p>
+                    <div class="download-features">
+                        <div class="download-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free to download</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No equipment needed</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Works offline</span>
+                        </div>
+                    </div>
+                    <a href="https://apps.apple.com/app/skymap" class="btn btn-primary btn-large">
+                        <i class="fab fa-apple"></i>
+                        Download on App Store
+                    </a>
+                </div>
+                <div class="download-visual">
+                    <div class="app-icon-large">
+                        <img src="public/images/icons/app-icon.png" alt="Skymap App Icon">
+                    </div>
+                    <div class="app-info">
+                        <h3>Skymap</h3>
+                        <p>Constellation Finder</p>
+                        <div class="app-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Privacy</span>
+                <h2>Your Privacy Matters</h2>
+                <p>We respect your data and privacy</p>
+            </div>
+            <div class="privacy-content">
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Data Collection</h3>
+                    <p>We collect minimal data necessary for app functionality:</p>
+                    <ul>
+                        <li><i class="fas fa-location-dot"></i> Location data (only when using the app)</li>
+                        <li><i class="fas fa-compass"></i> Device orientation for AR features</li>
+                        <li><i class="fas fa-camera"></i> Camera access (only when using AR)</li>
+                    </ul>
+                </div>
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Data Protection</h3>
+                    <p>Your data is used solely for providing AR features and improving app functionality. We never sell your personal information to third parties. We implement industry-standard security measures to protect your data.</p>
+                </div>
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Your Rights</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Access your data</li>
+                        <li><i class="fas fa-check"></i> Request data deletion</li>
+                        <li><i class="fas fa-check"></i> Opt out of data collection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Support</span>
+                <h2>Get in Touch</h2>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-methods">
+                <a href="mailto:harmonyastroapp@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>harmonyastroapp@gmail.com</p>
+                </a>
+                <a href="https://twitter.com/harmonyastro" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <p>@harmonyastro</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="public/images/icons/app-icon.png" alt="Skymap" class="footer-logo">
+                    <span>Skymap</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#screenshots">Screenshots</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Terms of Use</a>
+                    <span class="divider">•</span>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <p class="copyright">&copy; 2025 Skymap. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>
+
