@@ -68,3 +68,10 @@ Your privacy matters to us. We collect minimal data necessary for app functional
 
 © 2025 Skymap. All rights reserved.
 
+
+
+
+
+
+
+

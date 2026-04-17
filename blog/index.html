@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skymap Blog - Stargazing Guides & Astronomy Tips</title>
+    <meta name="description" content="Practical guides for stargazing with Skymap. Learn how to identify constellations, find best stargazing locations, and use AR for astronomy.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://harmonyastroapps.github.io/SkymapApp/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Skymap Blog">
+    <meta property="og:url" content="https://harmonyastroapps.github.io/SkymapApp/blog/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Skymap Blog",
+      "url": "https://harmonyastroapps.github.io/SkymapApp/blog/"
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #667eea;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --text-muted: #6b7280;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #8b9dff;
+                --bg: #0f1115;
+                --card: #1c1e24;
+                --text: #f9fafb;
+                --text-muted: #9ca3af;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--card);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text); }
+        main { padding: 40px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 40px; }
+        .post-list { display: grid; gap: 20px; }
+        .post-card {
+            background: var(--card);
+            padding: 28px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+        .post-card:hover { transform: translateY(-2px); }
+        .post-meta { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px; }
+        .post-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
+        .post-excerpt { color: var(--text-muted); }
+        footer { text-align: center; padding: 40px 0; opacity: 0.7; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Skymap</a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="index.html">Blog</a>
+                    <a href="../about.html">About</a>
+                    <a href="../faq.html">FAQ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Skymap Blog</h1>
+            <p class="subtitle">Stargazing guides, tips, and astronomy insights.</p>
+
+            <div class="post-list">
+                <a href="how-to-find-constellations.html" class="post-card">
+                    <div class="post-meta">Guide &middot; 4 min read</div>
+                    <h2 class="post-title">How to Find Constellations: A Beginner's Guide to the Night Sky</h2>
+                    <p class="post-excerpt">Learn the easiest way to locate and identify constellations using AR technology. No prior astronomy knowledge needed.</p>
+                </a>
+
+                <a href="best-stargazing-locations.html" class="post-card">
+                    <div class="post-meta">Guide &middot; 4 min read</div>
+                    <h2 class="post-title">Best Stargazing Locations: Where to See the Stars Clearly</h2>
+                    <p class="post-excerpt">Discover the best places to use Skymap and see the night sky with minimal light pollution.</p>
+                </a>
+
+                <a href="ar-vs-telescopes.html" class="post-card">
+                    <div class="post-meta">Comparison &middot; 4 min read</div>
+                    <h2 class="post-title">AR vs Telescopes: Which Is Better for Beginners?</h2>
+                    <p class="post-excerpt">We tested both methods and compared accuracy, ease of use, and cost. Here are the surprising results.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 HarmonyAstroApps. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

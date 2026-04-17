@@ -1,0 +1,7 @@
+# robots.txt for Skymap
+# All search engines and AI crawlers are welcome
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://harmonyastroapps.github.io/SkymapApp/sitemap.xml
