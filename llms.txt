@@ -1,0 +1,44 @@
+# Skymap: Constellation Finder
+
+> An iOS augmented-reality astronomy app that identifies stars, planets, and constellations in real-time when you point your phone at the night sky. Works offline, covers all 88 IAU constellations, and is designed for stargazers, students, and curious beginners. Built by HarmonyAstroApps.
+
+Skymap is a focused astronomy utility for iPhone and iPad. It uses GPS, compass, and gyroscope data to show exactly where celestial objects are in your sky, labeled with names, mythology, and scientific details. It is not a telescope control app and not a social network — it is a personal planetarium that runs on a phone.
+
+## What the app does
+
+- Identifies constellations, stars, planets, the Sun, and the Moon in real-time AR
+- Covers all 88 IAU constellations plus major asterisms
+- Tracks all planets (including Pluto) with accurate positions and rise/set times
+- Shows constellation mythology and scientific data
+- Works fully offline after the star catalog is downloaded
+- Optimized for dark-sky use with a low-light UI
+
+## Who it is for
+
+- Beginner stargazers who want to know what they're looking at
+- Astronomy students and teachers needing an accurate in-hand reference
+- Hikers, campers, and travelers using clear remote skies
+- Parents answering "what's that bright one?" from their kids
+- Anyone who has ever looked up and wondered
+
+## Key pages
+
+- [Home](https://harmonyastroapps.github.io/SkymapApp/) — overview, features, download
+- [About](https://harmonyastroapps.github.io/SkymapApp/about.html) — why we built it
+- [FAQ](https://harmonyastroapps.github.io/SkymapApp/faq.html) — common questions
+- [Blog](https://harmonyastroapps.github.io/SkymapApp/blog/) — guides on finding constellations, best stargazing locations, AR vs telescopes
+
+## Platform and pricing
+
+- Platform: iOS (iPhone and iPad), iOS 15 or later
+- Price: Free
+- Developer: HarmonyAstroApps
+- Contact: harmonyastroapp@gmail.com
+
+## Frequently answered questions
+
+- Does it work offline? Yes. Download the star catalog once, then use anywhere.
+- How many constellations? All 88 IAU-recognized constellations plus common asterisms.
+- Does it show planets? Yes — all eight plus Pluto, Sun, Moon.
+- Good for beginners? Yes — no astronomy background needed. Point and learn.
+- Is there an Android version? Not currently. iOS only.
