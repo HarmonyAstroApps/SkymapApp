@@ -1649,3 +1649,140 @@ ul { list-style: none; }
     border-top: 1px solid var(--border-cosmic);
     margin: var(--space-xl) 0;
 }
+
+/* ============================================================
+   PROMO STRIP — top of page
+   ============================================================ */
+.promo-strip {
+    position: relative;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.55rem 1.25rem;
+    text-decoration: none;
+    color: var(--ink-star, #f1f4ff);
+    background:
+        linear-gradient(90deg, rgba(196, 133, 255, 0) 0%, rgba(196, 133, 255, 0.18) 50%, rgba(196, 133, 255, 0) 100%),
+        linear-gradient(90deg, var(--accent-aurora) 0%, var(--accent-nova) 50%, var(--accent-aurora) 100%);
+    background-size: 200% 100%, 100% 100%;
+    background-position: 0% 0%, 0 0;
+    font-family: var(--ff-sans, 'Inter', sans-serif);
+    font-size: 0.875rem;
+    letter-spacing: 0.005em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    transition: filter 220ms ease, transform 220ms ease;
+    animation: promoShimmer 9s ease-in-out infinite;
+}
+.promo-strip:hover { filter: brightness(1.1); }
+.promo-strip:active { transform: translateY(1px); }
+.promo-strip strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #06081a;
+}
+.promo-strip em {
+    font-style: normal;
+    font-weight: 600;
+    color: #06081a;
+    border-bottom: 1px dashed rgba(6, 8, 26, 0.45);
+}
+.promo-strip__pulse {
+    position: relative;
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #06081a;
+    box-shadow: 0 0 0 0 rgba(6, 8, 26, 0.7);
+    animation: promoPulse 2.4s ease-out infinite;
+}
+.promo-strip__text {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    color: #06081a;
+    line-height: 1.35;
+}
+.promo-strip__sep { color: rgba(6, 8, 26, 0.55); padding: 0 0.15rem; }
+.promo-strip__detail { color: rgba(6, 8, 26, 0.88); }
+.promo-strip__cta {
+    flex: 0 0 auto;
+    font-family: var(--ff-mono, 'JetBrains Mono', monospace);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #06081a;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid rgba(6, 8, 26, 0.55);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: background 220ms ease, transform 220ms ease;
+}
+.promo-strip:hover .promo-strip__cta {
+    background: rgba(6, 8, 26, 0.85);
+    color: var(--accent-aurora);
+    transform: translateX(2px);
+}
+
+@keyframes promoShimmer {
+    0%, 100% { background-position: 0% 0%, 0 0; }
+    50%      { background-position: 200% 0%, 0 0; }
+}
+@keyframes promoPulse {
+    0%   { box-shadow: 0 0 0 0   rgba(6, 8, 26, 0.6); }
+    70%  { box-shadow: 0 0 0 10px rgba(6, 8, 26, 0); }
+    100% { box-shadow: 0 0 0 0   rgba(6, 8, 26, 0); }
+}
+
+@media (max-width: 768px) {
+    .promo-strip {
+        font-size: 0.78rem;
+        padding: 0.5rem 0.85rem;
+        gap: 0.55rem;
+    }
+    .promo-strip__sep,
+    .promo-strip__detail {
+        display: none;
+    }
+    .promo-strip__cta {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.55rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-strip,
+    .promo-strip__pulse {
+        animation: none;
+    }
+}
+
+/* Lede link inside sub-hero */
+.lede-link {
+    color: var(--accent-aurora);
+    border-bottom: 1px dashed var(--accent-aurora);
+    text-decoration: none;
+}
+.lede-link:hover { color: var(--accent-nova); border-color: var(--accent-nova); }
+
+/* Footer link styling for developer link */
+.footer-base a {
+    color: var(--accent-aurora);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(138, 170, 255, 0.4);
+    transition: color 220ms ease, border-color 220ms ease;
+}
+.footer-base a:hover {
+    color: var(--accent-nova);
+    border-color: var(--accent-nova);
+}
