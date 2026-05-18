@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skymap: AR Constellation Finder &amp; Night Sky Guide for iOS | HarmonyAstroApps</title>
-    <meta name="description" content="Skymap is an iOS AR astronomy app that identifies stars, planets, and constellations in real-time when you point your phone at the sky. Works offline. Perfect for stargazers, students, and curious minds.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Skymap — Point. Discover. Wonder. · AR Constellation Finder for iOS</title>
+    <meta name="description" content="Skymap turns your iPhone into a window on the universe. Point at the night sky and instantly identify stars, planets, and all 88 constellations in real-time AR. Works offline. Built for curious minds.">
     <meta name="keywords" content="skymap, constellation finder, ar astronomy app, stargazing app, night sky guide, planet tracker, star map ios, augmented reality astronomy, identify constellations, iphone astronomy, ipad astronomy, HarmonyAstroApps">
     <meta name="author" content="HarmonyAstroApps">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -13,33 +13,33 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Skymap">
-    <meta property="og:title" content="Skymap: AR Constellation Finder &amp; Night Sky Guide">
-    <meta property="og:description" content="Point your iPhone at the sky and instantly identify stars, planets, and constellations in AR. Works offline — your personal planetarium.">
+    <meta property="og:title" content="Skymap — Point. Discover. Wonder.">
+    <meta property="og:description" content="Point your iPhone at the sky. Identify stars, planets, and constellations in AR. Works offline.">
     <meta property="og:url" content="https://harmonyastroapps.github.io/SkymapApp/">
     <meta property="og:image" content="https://harmonyastroapps.github.io/SkymapApp/public/images/icons/app-icon.png">
-    <meta property="og:image:alt" content="Skymap - AR constellation finder app icon">
+    <meta property="og:image:alt" content="Skymap — AR constellation finder">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Skymap: AR Constellation Finder &amp; Night Sky Guide">
-    <meta name="twitter:description" content="Point your phone at the sky, identify stars, planets, and constellations in AR.">
+    <meta name="twitter:title" content="Skymap — Point. Discover. Wonder.">
+    <meta name="twitter:description" content="AR constellations and planets on your iPhone. Works offline.">
     <meta name="twitter:image" content="https://harmonyastroapps.github.io/SkymapApp/public/images/icons/app-icon.png">
 
     <!-- Search engine verification -->
     <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_TOKEN">
     <meta name="msvalidate.01" content="7791CFBB26CBCB8914508545EC81DA60">
-    <meta name="theme-color" content="#667eea">
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="color-scheme" content="dark">
 
     <link rel="icon" type="image/png" href="public/images/icons/app-icon.png">
     <link rel="apple-touch-icon" href="public/images/icons/app-icon.png">
     <link rel="stylesheet" href="src/styles/globals.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Structured data: MobileApplication -->
+    <!-- Structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,7 +49,7 @@
       "operatingSystem": "iOS",
       "applicationCategory": "EducationApplication",
       "applicationSubCategory": "Astronomy",
-      "description": "An AR astronomy app for iOS that identifies stars, planets, and constellations in real-time when you point your device at the sky. Covers 88 constellations and works offline.",
+      "description": "An AR astronomy app for iOS that identifies stars, planets, and constellations in real-time when you point your device at the sky. Covers all 88 IAU constellations and works offline.",
       "url": "https://harmonyastroapps.github.io/SkymapApp/",
       "image": "https://harmonyastroapps.github.io/SkymapApp/public/images/icons/app-icon.png",
       "featureList": [
@@ -60,483 +60,761 @@
         "Works fully offline once downloaded",
         "Designed for dark-sky low-light use"
       ],
-      "author": {
-        "@type": "Organization",
-        "name": "HarmonyAstroApps",
-        "url": "https://harmonyastroapps.github.io/",
-        "email": "harmonyastroapp@gmail.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "HarmonyAstroApps",
-        "url": "https://harmonyastroapps.github.io/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
+      "author": { "@type": "Organization", "name": "HarmonyAstroApps", "url": "https://harmonyastroapps.github.io/", "email": "harmonyastroapp@gmail.com" },
+      "publisher": { "@type": "Organization", "name": "HarmonyAstroApps", "url": "https://harmonyastroapps.github.io/" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
     }
     </script>
-
-    <!-- Structured data: FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How does Skymap identify constellations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Skymap uses your device's GPS, compass, and gyroscope to calculate exactly where you are and which way you're pointing your phone. It then overlays the real-time sky map in AR, so when you point at a star cluster, it labels the constellation and its brightest stars."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Skymap work offline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Once the star catalog is downloaded, Skymap works fully offline. You don't need internet, cellular, or WiFi to identify the night sky — useful when stargazing in remote areas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many constellations does Skymap cover?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "All 88 officially recognized constellations from the International Astronomical Union (IAU), plus major asterisms like the Big Dipper and the Summer Triangle."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Skymap show planets?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Skymap tracks the Sun, Moon, and all eight planets (plus Pluto) and shows their real-time positions in the sky, including when they're below the horizon."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Skymap good for beginners?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Skymap is designed for people with zero astronomy background. Point your phone at the sky, and the app tells you what you're looking at — no knowledge of declination, right ascension, or star charts needed."
-          }
-        }
+        { "@type": "Question", "name": "How does Skymap identify constellations?", "acceptedAnswer": { "@type": "Answer", "text": "Skymap uses your device's GPS, compass, and gyroscope to know exactly where you are and which way you're pointing your phone. It overlays a real-time sky map in AR, labeling constellations and their brightest stars as you sweep across the sky." } },
+        { "@type": "Question", "name": "Does Skymap work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Once the star catalog is downloaded, Skymap works fully offline. No internet, cellular, or Wi-Fi needed." } },
+        { "@type": "Question", "name": "How many constellations does Skymap cover?", "acceptedAnswer": { "@type": "Answer", "text": "All 88 officially recognized constellations from the International Astronomical Union, plus major asterisms like the Big Dipper and the Summer Triangle." } },
+        { "@type": "Question", "name": "Can Skymap show planets?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Skymap tracks the Sun, Moon, and all eight planets and shows their real-time positions, including when they're below the horizon." } },
+        { "@type": "Question", "name": "Is Skymap good for beginners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Skymap is designed for anyone with zero astronomy background. Point your phone, and the app tells you what you're looking at — no charts, no jargon." } }
       ]
     }
     </script>
-
-    <!-- Structured data: Organization -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "HarmonyAstroApps",
-      "url": "https://harmonyastroapps.github.io/",
-      "email": "harmonyastroapp@gmail.com",
-      "sameAs": ["https://github.com/HarmonyAstroApps"]
-    }
-    </script>
-
-    <!-- Structured data: WebSite -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Skymap",
-      "url": "https://harmonyastroapps.github.io/SkymapApp/",
-      "publisher": { "@type": "Organization", "name": "HarmonyAstroApps" }
-    }
+    { "@context": "https://schema.org", "@type": "Organization", "name": "HarmonyAstroApps", "url": "https://harmonyastroapps.github.io/", "email": "harmonyastroapp@gmail.com", "sameAs": ["https://github.com/HarmonyAstroApps"] }
     </script>
 </head>
 <body>
-    <!-- Stars background -->
-    <div class="stars-container">
-        <div class="stars"></div>
-        <div class="stars2"></div>
-        <div class="stars3"></div>
-    </div>
+    <!-- SVG filter for noise -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <filter id="cosmos-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+            <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.45 0"/>
+        </filter>
+    </svg>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container nav-container">
-            <div class="logo">
-                <img src="public/images/icons/app-icon.png" alt="Skymap Icon" class="logo-icon">
-                <span class="logo-text">Skymap</span>
-            </div>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#screenshots">Screenshots</a>
-                <a href="#download">Download</a>
-                <a href="#privacy">Privacy</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
+    <!-- Cosmic noise overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Starfield canvas -->
+    <canvas class="starfield" aria-hidden="true"></canvas>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Header sentinel -->
+    <div class="header-sentinel" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav" aria-label="Primary">
+            <a href="#home" class="brand">
+                <img src="public/images/icons/app-icon.png" alt="" class="brand-logo">
+                <span class="brand-name">Skymap</span>
+            </a>
+            <ul class="nav-menu" role="list">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#tonight" class="nav-link">Tonight's Sky</a></li>
+                <li><a href="#science" class="nav-link">Science</a></li>
+                <li><a href="#screens" class="nav-link">Screens</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+            <a href="#download" class="nav-cta" data-magnetic>
+                <span class="btn-label">Get the App</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+                <span></span><span></span><span></span>
             </button>
-        </div>
+        </nav>
+    </header>
+
+    <!-- Drawer -->
+    <div class="drawer-scrim" aria-hidden="true"></div>
+    <nav id="drawer" class="drawer" aria-label="Mobile menu">
+        <a href="#features">Features</a>
+        <a href="#tonight">Tonight's Sky</a>
+        <a href="#science">Science</a>
+        <a href="#screens">Screens</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="#download" class="drawer-cta">Get the App</a>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <a href="#features">Features</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#download">Download</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-mesh" aria-hidden="true"></div>
+            <div class="hero-aurora" aria-hidden="true"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-glow"></div>
-        <div class="container hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-star"></i>
-                <span>Night Sky Guide</span>
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>The night sky · decoded</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="line">Point.</span>
+                        <span class="line">Discover.</span>
+                        <span class="line italic-accent">Wonder.</span>
+                    </h1>
+
+                    <p class="hero-tagline">
+                        Skymap turns your iPhone into a window on the universe.
+                        Point at the sky, and constellations, planets, and bright
+                        stars name themselves in real-time AR.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="https://apps.apple.com/us/app/skymap-constellation-finder/id6741057101" class="btn btn--primary" data-magnetic>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.5 12.5c0-2.5 2-3.7 2.1-3.8-1.1-1.7-2.9-2-3.5-2-1.5-.2-2.9.9-3.6.9s-1.9-.9-3.1-.8c-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 3 2.3 1.2-.1 1.7-.8 3.1-.8 1.5 0 1.9.8 3.1.8 1.3 0 2.1-1.1 2.9-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-.9-2.6-3.6zM15.2 5.1c.7-.8 1.1-2 .9-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.5 3-1.4z"/></svg>
+                            <span class="btn-label">Download on the App Store</span>
+                        </a>
+                        <a href="#features" class="btn btn--ghost" data-magnetic>
+                            <span class="btn-label">Tour the universe</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                    </div>
+
+                    <p class="hero-spec">
+                        <span>iOS 17+</span>
+                        <span class="dot-sep" aria-hidden="true">·</span>
+                        <span>Free to download</span>
+                        <span class="dot-sep" aria-hidden="true">·</span>
+                        <span>Works offline</span>
+                        <span class="dot-sep" aria-hidden="true">·</span>
+                        <span>No ads</span>
+                    </p>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="orbital-system" aria-hidden="true">
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+                        <span class="planet planet-1"></span>
+                        <span class="planet planet-2"></span>
+                        <span class="planet planet-3"></span>
+                    </div>
+                    <div class="phone-frame" data-parallax-y="0.18">
+                        <div class="phone-glow"></div>
+                        <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap app showing the night sky in AR" class="phone-screen">
+                        <div class="phone-tag phone-tag--top">
+                            <span class="phone-tag-key">Constellation</span>
+                            <span class="phone-tag-val">Orion</span>
+                        </div>
+                        <div class="phone-tag phone-tag--bottom">
+                            <span class="phone-tag-key">Bright star</span>
+                            <span class="phone-tag-val mono">Betelgeuse · α Ori</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1 class="hero-title">
-                <span class="gradient-text">Skymap</span>
-                <span class="subtitle">Constellation Finder</span>
-            </h1>
-            <p class="hero-description">
-                Point your device at the sky and unlock the secrets of the universe. 
-                Identify stars, planets, and constellations in real-time with stunning AR technology.
-            </p>
-            <div class="hero-buttons">
-                <a href="#download" class="btn btn-primary">
-                    <i class="fab fa-apple"></i>
-                    Download for iOS
-                </a>
-                <a href="#features" class="btn btn-secondary">
-                    <i class="fas fa-rocket"></i>
-                    Explore Features
-                </a>
-            </div>
+
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-value">9+</span>
-                    <span class="stat-label">Planets</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-value">88</span>
+                    <span class="stat-value"><span class="counter" data-target="88">0</span></span>
                     <span class="stat-label">Constellations</span>
                 </div>
-                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-value">AR</span>
+                    <span class="stat-value"><span class="counter" data-target="9">0</span></span>
+                    <span class="stat-label">Planets tracked</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value mono">AR</span>
                     <span class="stat-label">Real-time</span>
                 </div>
+                <div class="stat">
+                    <span class="stat-value mono">∞</span>
+                    <span class="stat-label">Offline forever</span>
+                </div>
             </div>
-        </div>
-        <div class="hero-visual">
-            <div class="phone-mockup">
-                <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap App Screenshot">
-            </div>
-            <div class="orbital-ring ring-1"></div>
-            <div class="orbital-ring ring-2"></div>
-            <div class="planet planet-1"></div>
-            <div class="planet planet-2"></div>
-            <div class="planet planet-3"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Features</span>
-                <h2>Your Personal Planetarium</h2>
-                <p>Everything you need to explore the night sky</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card feature-card-large">
-                    <div class="feature-icon">
-                        <i class="fas fa-vr-cardboard"></i>
+        <!-- KEY-STAT BAND (Webb-style) -->
+        <section class="key-stats">
+            <div class="container">
+                <div class="ks-grid">
+                    <div class="ks-cell reveal">
+                        <span class="ks-h">88</span>
+                        <span class="ks-l">IAU constellations</span>
+                        <span class="ks-d">Andromeda to Vulpecula. Every official one.</span>
                     </div>
-                    <h3>Real-time AR Tracking</h3>
-                    <p>Point your device at the sky and instantly identify planets, stars, and satellites with precision augmented reality.</p>
-                    <div class="feature-glow"></div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
+                    <div class="ks-cell reveal">
+                        <span class="ks-h">9,000+</span>
+                        <span class="ks-l">Catalogued stars</span>
+                        <span class="ks-d">Down to magnitude 6 — what your naked eye can see.</span>
                     </div>
-                    <h3>Live Sky Map</h3>
-                    <p>Locate Jupiter, Saturn, Mars, Venus, Mercury, Neptune, Uranus, and Pluto with scientific accuracy.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-compass"></i>
+                    <div class="ks-cell reveal">
+                        <span class="ks-h">Real-time</span>
+                        <span class="ks-l">AR positioning</span>
+                        <span class="ks-d">GPS + compass + gyro. Accurate to the second.</span>
                     </div>
-                    <h3>Astronomical Data</h3>
-                    <p>Get accurate altitude, azimuth, and orbital positions for all major celestial bodies.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-star"></i>
+                    <div class="ks-cell reveal">
+                        <span class="ks-h">Offline</span>
+                        <span class="ks-l">Works anywhere</span>
+                        <span class="ks-d">Desert. Mountain. Cabin. No signal required.</span>
                     </div>
-                    <h3>Constellation Explorer</h3>
-                    <p>Discover constellation stories, mythology, and learn about the Milky Way and deep-space objects.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-sun"></i>
-                    </div>
-                    <h3>Solar System Tracker</h3>
-                    <p>Track the Sun, Moon, asteroids, and exoplanets as they move through the sky in real-time.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Educational Content</h3>
-                    <p>Perfect for students, teachers, and amateur astronomers to learn about the universe.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Screenshots</span>
-                <h2>See the Universe</h2>
-                <p>Beautiful interface designed for cosmic exploration</p>
-            </div>
-        </div>
-        <div class="screenshot-carousel">
-            <div class="screenshot-track">
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap Screenshot 1">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/1_APP_IPHONE_67_1.png" alt="Skymap Screenshot 2">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/2_APP_IPHONE_67_2.png" alt="Skymap Screenshot 3">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/3_APP_IPHONE_67_3.png" alt="Skymap Screenshot 4">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/4_APP_IPHONE_67_4.png" alt="Skymap Screenshot 5">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/5_APP_IPHONE_67_5.png" alt="Skymap Screenshot 6">
-                </div>
-                <!-- Duplicate for seamless loop -->
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap Screenshot 1">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/1_APP_IPHONE_67_1.png" alt="Skymap Screenshot 2">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/2_APP_IPHONE_67_2.png" alt="Skymap Screenshot 3">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/3_APP_IPHONE_67_3.png" alt="Skymap Screenshot 4">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/4_APP_IPHONE_67_4.png" alt="Skymap Screenshot 5">
-                </div>
-                <div class="screenshot-item">
-                    <img src="public/images/screenshots/5_APP_IPHONE_67_5.png" alt="Skymap Screenshot 6">
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- BENTO FEATURES -->
+        <section id="features" class="features">
+            <div class="container">
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>What Skymap does</p>
+                <h2 class="section-title">
+                    A planetarium <em class="italic-accent">in your pocket.</em>
+                </h2>
+                <p class="section-lede">
+                    Everything you need to know the night sky — without owning a telescope,
+                    a star chart, or a single equation.
+                </p>
 
-    <!-- Perfect For Section -->
-    <section class="perfect-for">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Who It's For</span>
-                <h2>Perfect For Explorers</h2>
-                <p>Whether you're a beginner or expert, Skymap is your companion</p>
-            </div>
-            <div class="audience-grid">
-                <div class="audience-card">
-                    <div class="audience-icon">
-                        <i class="fas fa-telescope"></i>
-                    </div>
-                    <h3>Astronomy Enthusiasts</h3>
-                    <p>Discover celestial wonders and deepen your knowledge of the cosmos with detailed astronomical data.</p>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3>Students & Teachers</h3>
-                    <p>An engaging educational tool for learning about space science, planetary systems, and constellations.</p>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">
-                        <i class="fas fa-campground"></i>
-                    </div>
-                    <h3>Stargazers & Campers</h3>
-                    <p>Make your camping trips magical by identifying stars and planets during clear night skies.</p>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">
-                        <i class="fas fa-child"></i>
-                    </div>
-                    <h3>Curious Minds</h3>
-                    <p>For anyone who's ever looked up and wondered what's out there in the vast universe.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download">
-        <div class="download-glow"></div>
-        <div class="container">
-            <div class="download-content">
-                <div class="download-text">
-                    <span class="section-tag">Get Started</span>
-                    <h2>Start Your Astronomical Journey</h2>
-                    <p>Download Skymap now and unlock the mysteries of the night sky. Available for iOS devices.</p>
-                    <div class="download-features">
-                        <div class="download-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Free to download</span>
+                <div class="bento">
+                    <article class="bento-item bento-large reveal" data-tilt>
+                        <div class="tilt-inner">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M12 1v6m0 10v6m11-11h-6M7 12H1m15.5-7.5L18 6M6 18l1.5-1.5m9 0L18 18M7.5 7.5L6 6"/>
+                                </svg>
+                            </div>
+                            <h3 class="bento-h">Real-time AR sky</h3>
+                            <p class="bento-p">
+                                Point at the night sky. Constellation lines, planet labels, and
+                                star names appear over what's actually there — no calibration,
+                                no setup, no charts.
+                            </p>
+                            <div class="bento-tagline">
+                                <span class="tag-key">RA</span>
+                                <span class="tag-val mono">05h 35m 17.3s</span>
+                                <span class="tag-sep">·</span>
+                                <span class="tag-key">Dec</span>
+                                <span class="tag-val mono">−05° 23' 28"</span>
+                            </div>
                         </div>
-                        <div class="download-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>No equipment needed</span>
+                    </article>
+
+                    <article class="bento-item bento-wide reveal" data-tilt>
+                        <div class="tilt-inner">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path d="M3 12h18M12 3v18M5.6 5.6l12.8 12.8M5.6 18.4L18.4 5.6"/>
+                                </svg>
+                            </div>
+                            <h3 class="bento-h">Tonight's sky widget</h3>
+                            <p class="bento-p">
+                                See where every visible planet sits in the sky right now — from
+                                your exact location.
+                            </p>
                         </div>
-                        <div class="download-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Works offline</span>
+                    </article>
+
+                    <article class="bento-item reveal" data-tilt>
+                        <div class="tilt-inner">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4 5.7 20.8 8 13.6 2 9.2h7.6L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="bento-h">88 constellations</h3>
+                            <p class="bento-p">
+                                Every IAU constellation with classical line patterns, mythological
+                                origin, and the brightest star in each.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-item reveal" data-tilt>
+                        <div class="tilt-inner">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path d="M12 7v5l3 3"/>
+                                </svg>
+                            </div>
+                            <h3 class="bento-h">Time travel</h3>
+                            <p class="bento-p">
+                                Fast-forward or rewind. See where Mars will be tomorrow, or
+                                where Polaris stood 10,000 years ago.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-item bento-wide reveal" data-tilt>
+                        <div class="tilt-inner">
+                            <div class="bento-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="bento-h">Mythology + science</h3>
+                            <p class="bento-p">
+                                Each constellation tells two stories: the Greek myth that named it
+                                and the modern physics that lights it. Read either, or both.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-item bento-tall reveal" data-tilt>
+                        <div class="tilt-inner">
+                            <div class="bento-icon bento-icon--warm">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"/>
+                                </svg>
+                            </div>
+                            <h3 class="bento-h">Offline forever</h3>
+                            <p class="bento-p">
+                                After download, Skymap works without a signal. Desert sky,
+                                mountain cabin, transatlantic flight — it's all yours.
+                            </p>
+                            <ul class="bento-list">
+                                <li><span class="li-check">✓</span>No login</li>
+                                <li><span class="li-check">✓</span>No subscription</li>
+                                <li><span class="li-check">✓</span>No tracking</li>
+                                <li><span class="li-check">✓</span>No ads</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSTELLATION DRAW (SVG connect the dots) -->
+        <section id="tonight" class="constellation-band">
+            <div class="container constellation-grid">
+                <div class="constellation-text reveal">
+                    <p class="section-eyebrow"><span class="eyebrow-dot"></span>The Drawing.</p>
+                    <h2 class="band-title">
+                        Lines you've seen<br>
+                        <em class="italic-accent">for 50,000 years.</em>
+                    </h2>
+                    <p class="band-lede">
+                        Humans have been connecting these dots since before language. Skymap shows
+                        you the exact pattern that Sumerian astronomers, Polynesian navigators,
+                        and Greek poets all saw in the same sky.
+                    </p>
+                    <ul class="band-list">
+                        <li><span class="band-num">α</span><span><b>Betelgeuse.</b> Red supergiant, 642 light-years.</span></li>
+                        <li><span class="band-num">β</span><span><b>Rigel.</b> Blue supergiant, 860 light-years.</span></li>
+                        <li><span class="band-num">δ</span><span><b>Mintaka.</b> Orion's belt — the navigator's star.</span></li>
+                    </ul>
+                </div>
+
+                <div class="constellation-visual">
+                    <svg viewBox="0 0 400 500" class="constellation-svg reveal" aria-label="Constellation of Orion">
+                        <!-- Background dim stars -->
+                        <circle cx="55" cy="120" r="0.7" fill="rgba(255,255,255,0.5)"/>
+                        <circle cx="120" cy="60" r="0.8" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="260" cy="80" r="0.6" fill="rgba(255,255,255,0.5)"/>
+                        <circle cx="340" cy="180" r="0.9" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="80" cy="350" r="0.6" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="370" cy="320" r="0.7" fill="rgba(255,255,255,0.5)"/>
+                        <circle cx="200" cy="440" r="0.8" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="40" cy="250" r="0.5" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="380" cy="250" r="0.5" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="160" cy="270" r="0.7" fill="rgba(255,255,255,0.4)"/>
+
+                        <!-- Orion main stars -->
+                        <!-- Betelgeuse (top-left shoulder) -->
+                        <g class="star star--warm">
+                            <circle cx="115" cy="160" r="11" fill="rgba(255, 184, 107, 0.15)"/>
+                            <circle cx="115" cy="160" r="5.5" fill="#ffb86b"/>
+                            <text x="135" y="160" class="star-label">Betelgeuse</text>
+                        </g>
+                        <!-- Bellatrix (top-right shoulder) -->
+                        <g class="star">
+                            <circle cx="295" cy="180" r="9" fill="rgba(138, 170, 255, 0.12)"/>
+                            <circle cx="295" cy="180" r="4.5" fill="#dbe5ff"/>
+                            <text x="310" y="180" class="star-label">Bellatrix</text>
+                        </g>
+                        <!-- Belt: Alnitak, Alnilam, Mintaka -->
+                        <g class="star">
+                            <circle cx="160" cy="270" r="3.5" fill="#dbe5ff"/>
+                        </g>
+                        <g class="star">
+                            <circle cx="205" cy="265" r="4" fill="#ffffff"/>
+                            <text x="200" y="245" class="star-label belt-label">Belt</text>
+                        </g>
+                        <g class="star">
+                            <circle cx="250" cy="260" r="3.5" fill="#dbe5ff"/>
+                        </g>
+                        <!-- Saiph (bottom-right knee) -->
+                        <g class="star">
+                            <circle cx="280" cy="380" r="9" fill="rgba(138, 170, 255, 0.12)"/>
+                            <circle cx="280" cy="380" r="4.5" fill="#dbe5ff"/>
+                            <text x="295" y="385" class="star-label">Saiph</text>
+                        </g>
+                        <!-- Rigel (bottom-left knee) -->
+                        <g class="star">
+                            <circle cx="125" cy="395" r="11" fill="rgba(138, 170, 255, 0.18)"/>
+                            <circle cx="125" cy="395" r="5.5" fill="#cfdbff"/>
+                            <text x="55" y="395" class="star-label" text-anchor="end">Rigel</text>
+                        </g>
+
+                        <!-- Connecting lines (animated) -->
+                        <polyline
+                            points="115,160 160,270 205,265 250,260 295,180 115,160"
+                            fill="none"
+                            stroke="url(#aurora-stroke)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-dasharray="700"
+                            stroke-dashoffset="700"
+                            class="constellation-line line-shoulders"
+                        />
+                        <polyline
+                            points="160,270 125,395"
+                            fill="none"
+                            stroke="url(#aurora-stroke)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-dasharray="250"
+                            stroke-dashoffset="250"
+                            class="constellation-line line-left-leg"
+                        />
+                        <polyline
+                            points="250,260 280,380"
+                            fill="none"
+                            stroke="url(#aurora-stroke)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-dasharray="250"
+                            stroke-dashoffset="250"
+                            class="constellation-line line-right-leg"
+                        />
+
+                        <defs>
+                            <linearGradient id="aurora-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#8aaaff"/>
+                                <stop offset="50%" stop-color="#c485ff"/>
+                                <stop offset="100%" stop-color="#ffb86b"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <p class="constellation-caption">Orion · As seen tonight at 21:00 from the Northern Hemisphere</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TONIGHT'S SKY widget -->
+        <section class="tonight-widget">
+            <div class="container">
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Tonight</p>
+                <h2 class="section-title">Where the <em class="italic-accent">planets</em> are.</h2>
+
+                <div class="tonight-grid">
+                    <div class="planet-row reveal" data-planet="venus">
+                        <span class="pl-icon" style="--c: #ffd07a"></span>
+                        <span class="pl-name">Venus</span>
+                        <span class="pl-state mono"><span class="state-dot state-dot--up"></span>Visible</span>
+                        <span class="pl-coord mono">Alt 32° · Az 245°</span>
+                        <span class="pl-time mono">Sets 21:42</span>
+                    </div>
+                    <div class="planet-row reveal" data-planet="mars">
+                        <span class="pl-icon" style="--c: #ff7a4d"></span>
+                        <span class="pl-name">Mars</span>
+                        <span class="pl-state mono"><span class="state-dot state-dot--up"></span>Visible</span>
+                        <span class="pl-coord mono">Alt 58° · Az 178°</span>
+                        <span class="pl-time mono">Sets 03:18</span>
+                    </div>
+                    <div class="planet-row reveal" data-planet="jupiter">
+                        <span class="pl-icon" style="--c: #e8d4a2"></span>
+                        <span class="pl-name">Jupiter</span>
+                        <span class="pl-state mono"><span class="state-dot state-dot--up"></span>Visible</span>
+                        <span class="pl-coord mono">Alt 41° · Az 102°</span>
+                        <span class="pl-time mono">Sets 02:54</span>
+                    </div>
+                    <div class="planet-row reveal" data-planet="saturn">
+                        <span class="pl-icon" style="--c: #d4b87f"></span>
+                        <span class="pl-name">Saturn</span>
+                        <span class="pl-state mono"><span class="state-dot state-dot--down"></span>Below horizon</span>
+                        <span class="pl-coord mono">Rises 04:12</span>
+                        <span class="pl-time mono">Wait</span>
+                    </div>
+                    <div class="planet-row reveal" data-planet="mercury">
+                        <span class="pl-icon" style="--c: #b9b9b9"></span>
+                        <span class="pl-name">Mercury</span>
+                        <span class="pl-state mono"><span class="state-dot state-dot--down"></span>Below horizon</span>
+                        <span class="pl-coord mono">Sun glare</span>
+                        <span class="pl-time mono">Dawn only</span>
+                    </div>
+                </div>
+
+                <p class="tonight-foot mono">* Demo values · Skymap uses your real position and time</p>
+            </div>
+        </section>
+
+        <!-- SCIENCE EDITORIAL BAND -->
+        <section id="science" class="science">
+            <div class="container science-grid">
+                <div class="science-text reveal">
+                    <p class="section-eyebrow"><span class="eyebrow-dot"></span>The Science.</p>
+                    <h2 class="science-title">
+                        What you're <em class="italic-accent">actually</em> looking at.
+                    </h2>
+                    <p class="science-lede">
+                        Every photon that hits your eye from a star left it before
+                        you were born. Light from Polaris began its trip when Henry VIII was
+                        crowned. Light from Andromeda was sent before <i>Homo sapiens</i> existed.
+                    </p>
+                    <p class="science-lede">
+                        Skymap doesn't show you the sky. It shows you a 4D snapshot of the
+                        sky — space and time, intertwined, on a screen the size of your palm.
+                        We think that's worth pointing at.
+                    </p>
+                    <p class="science-byline">— from the field notes, HarmonyAstroApps</p>
+                </div>
+
+                <aside class="science-art">
+                    <div class="distance-diagram reveal">
+                        <p class="diagram-title">Light, on its way to you.</p>
+                        <div class="distance-row">
+                            <span class="d-name">Sun</span>
+                            <div class="d-bar"><div class="d-fill" style="--w: 4%"></div></div>
+                            <span class="d-val mono">8.3 min</span>
+                        </div>
+                        <div class="distance-row">
+                            <span class="d-name">Sirius</span>
+                            <div class="d-bar"><div class="d-fill" style="--w: 18%"></div></div>
+                            <span class="d-val mono">8.6 yrs</span>
+                        </div>
+                        <div class="distance-row">
+                            <span class="d-name">Polaris</span>
+                            <div class="d-bar"><div class="d-fill" style="--w: 40%"></div></div>
+                            <span class="d-val mono">433 yrs</span>
+                        </div>
+                        <div class="distance-row">
+                            <span class="d-name">Betelgeuse</span>
+                            <div class="d-bar"><div class="d-fill" style="--w: 56%"></div></div>
+                            <span class="d-val mono">642 yrs</span>
+                        </div>
+                        <div class="distance-row">
+                            <span class="d-name">Andromeda</span>
+                            <div class="d-bar"><div class="d-fill" style="--w: 100%"></div></div>
+                            <span class="d-val mono">2.5M yrs</span>
                         </div>
                     </div>
-                    <a href="https://apps.apple.com/us/app/skymap-constellation-finder/id6741057101" class="btn btn-primary btn-large">
-                        <i class="fab fa-apple"></i>
-                        Download on App Store
+                </aside>
+            </div>
+        </section>
+
+        <!-- SCREENSHOTS FILMSTRIP -->
+        <section id="screens" class="screens">
+            <div class="container">
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Inside the app</p>
+                <h2 class="section-title">Sights from the <em class="italic-accent">sky.</em></h2>
+                <p class="section-lede">A look at Skymap on iPhone — exactly as you'll use it.</p>
+            </div>
+
+            <div class="filmstrip" role="region" aria-label="App screenshots">
+                <div class="film-cell">
+                    <img src="public/images/screenshots/0_APP_IPHONE_67_0.png" alt="Skymap AR view of Orion">
+                    <span class="film-cap"><span class="film-cap-num">01</span><span>AR sky overlay</span></span>
+                </div>
+                <div class="film-cell">
+                    <img src="public/images/screenshots/1_APP_IPHONE_67_1.png" alt="Constellation detail">
+                    <span class="film-cap"><span class="film-cap-num">02</span><span>Constellation detail</span></span>
+                </div>
+                <div class="film-cell">
+                    <img src="public/images/screenshots/2_APP_IPHONE_67_2.png" alt="Planet tracker">
+                    <span class="film-cap"><span class="film-cap-num">03</span><span>Planet positions</span></span>
+                </div>
+                <div class="film-cell">
+                    <img src="public/images/screenshots/3_APP_IPHONE_67_3.png" alt="Star catalog">
+                    <span class="film-cap"><span class="film-cap-num">04</span><span>Star catalog</span></span>
+                </div>
+                <div class="film-cell">
+                    <img src="public/images/screenshots/4_APP_IPHONE_67_4.png" alt="Time travel">
+                    <span class="film-cap"><span class="film-cap-num">05</span><span>Time travel</span></span>
+                </div>
+                <div class="film-cell">
+                    <img src="public/images/screenshots/5_APP_IPHONE_67_5.png" alt="Settings">
+                    <span class="film-cap"><span class="film-cap-num">06</span><span>Settings</span></span>
+                </div>
+            </div>
+            <div class="container filmstrip-hint">
+                <span class="hint">← Drag the reel · Or scroll the strip →</span>
+            </div>
+        </section>
+
+        <!-- AUDIENCE / PERFECT FOR -->
+        <section class="audience">
+            <div class="container">
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Who it's for</p>
+                <h2 class="section-title">Made for <em class="italic-accent">looking up.</em></h2>
+
+                <div class="audience-grid">
+                    <article class="aud-card reveal">
+                        <div class="aud-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M3.5 12s3-7 8.5-7 8.5 7 8.5 7-3 7-8.5 7-8.5-7-8.5-7z"/></svg>
+                        </div>
+                        <h3>Curious looker-uppers</h3>
+                        <p>For anyone who's ever asked "what's that bright one?" and wanted a real answer.</p>
+                    </article>
+
+                    <article class="aud-card reveal">
+                        <div class="aud-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10l-10-7-10 7v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9z"/></svg>
+                        </div>
+                        <h3>Students & teachers</h3>
+                        <p>Bring astronomy off the textbook. Walk outside, point, learn.</p>
+                    </article>
+
+                    <article class="aud-card reveal">
+                        <div class="aud-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21l9-18 9 18M3 21h18M9 17h6"/></svg>
+                        </div>
+                        <h3>Campers & hikers</h3>
+                        <p>Dark-sky aware. Big tap targets. Red-mode UI to protect night vision.</p>
+                    </article>
+
+                    <article class="aud-card reveal">
+                        <div class="aud-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                        </div>
+                        <h3>Amateur astronomers</h3>
+                        <p>Sky coordinates, magnitudes, rise/set times. Spotting before the telescope.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section id="download" class="download">
+            <div class="download-mesh" aria-hidden="true"></div>
+
+            <div class="container download-inner reveal">
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Get the App</p>
+                <h2 class="download-title">
+                    Step <em class="italic-accent">outside.</em>
+                </h2>
+                <p class="download-lede">
+                    Free on the App Store. iOS 17+. The night sky is open.
+                </p>
+
+                <div class="hero-cta hero-cta--center">
+                    <a href="https://apps.apple.com/us/app/skymap-constellation-finder/id6741057101" class="btn btn--primary btn--large" data-magnetic>
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.5 12.5c0-2.5 2-3.7 2.1-3.8-1.1-1.7-2.9-2-3.5-2-1.5-.2-2.9.9-3.6.9s-1.9-.9-3.1-.8c-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 3 2.3 1.2-.1 1.7-.8 3.1-.8 1.5 0 1.9.8 3.1.8 1.3 0 2.1-1.1 2.9-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-.9-2.6-3.6zM15.2 5.1c.7-.8 1.1-2 .9-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.5 3-1.4z"/></svg>
+                        <span class="btn-label">Download on the App Store</span>
+                    </a>
+                    <a href="#features" class="btn btn--ghost" data-magnetic>
+                        <span class="btn-label">See features again</span>
                     </a>
                 </div>
-                <div class="download-visual">
-                    <div class="app-icon-large">
-                        <img src="public/images/icons/app-icon.png" alt="Skymap App Icon">
-                    </div>
-                    <div class="app-info">
-                        <h3>Skymap</h3>
-                        <p>Constellation Finder</p>
-                        <div class="app-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Privacy Section -->
-    <section id="privacy" class="privacy">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Privacy</span>
-                <h2>Your Privacy Matters</h2>
-                <p>We respect your data and privacy</p>
-            </div>
-            <div class="privacy-content">
-                <div class="privacy-card">
-                    <div class="privacy-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Data Collection</h3>
-                    <p>We collect minimal data necessary for app functionality:</p>
-                    <ul>
-                        <li><i class="fas fa-location-dot"></i> Location data (only when using the app)</li>
-                        <li><i class="fas fa-compass"></i> Device orientation for AR features</li>
-                        <li><i class="fas fa-camera"></i> Camera access (only when using AR)</li>
-                    </ul>
-                </div>
-                <div class="privacy-card">
-                    <div class="privacy-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3>Data Protection</h3>
-                    <p>Your data is used solely for providing AR features and improving app functionality. We never sell your personal information to third parties. We implement industry-standard security measures to protect your data.</p>
-                </div>
-                <div class="privacy-card">
-                    <div class="privacy-icon">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Your Rights</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Access your data</li>
-                        <li><i class="fas fa-check"></i> Request data deletion</li>
-                        <li><i class="fas fa-check"></i> Opt out of data collection</li>
-                    </ul>
+                <div class="download-meta">
+                    <div class="dm-row"><span class="dm-key">App Size</span><span class="dm-val mono">~80 MB</span></div>
+                    <div class="dm-row"><span class="dm-key">Compatibility</span><span class="dm-val mono">iOS 17+, iPadOS 17+</span></div>
+                    <div class="dm-row"><span class="dm-key">Languages</span><span class="dm-val mono">English · Japanese · more soon</span></div>
+                    <div class="dm-row"><span class="dm-key">Price</span><span class="dm-val mono">Free, no ads</span></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Support</span>
-                <h2>Get in Touch</h2>
-                <p>Have questions or feedback? We'd love to hear from you!</p>
+        <!-- FAQ teaser -->
+        <section class="faq-teaser">
+            <div class="container">
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Honest Answers</p>
+                <h2 class="section-title">Quick <em class="italic-accent">questions.</em></h2>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Do I need internet to use it?</span>
+                        <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </summary>
+                    <p>
+                        No. After the initial download, Skymap works fully offline. Your GPS and
+                        device sensors do all the heavy lifting locally. Perfect for camping,
+                        flights, or any place without signal.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>How accurate is it?</span>
+                        <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </summary>
+                    <p>
+                        Skymap uses your iPhone's GPS, compass, and gyroscope plus a precomputed
+                        ephemeris of planet and star positions. Position accuracy is within ±1° on
+                        a calibrated iPhone — well within naked-eye precision.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Will it drain my battery?</span>
+                        <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </summary>
+                    <p>
+                        Sky mode uses the camera and sensors, so battery use is moderate.
+                        We include a "list mode" without AR for quick lookups that's near-zero impact.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Is it really free?</span>
+                        <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </summary>
+                    <p>
+                        Yes. The full app is free with no ads. We don't sell data and there's no
+                        subscription. If you love it, leaving a review is the only "thank you" we ask for.
+                    </p>
+                </details>
+
+                <p class="faq-more"><a href="faq.html">Read the full FAQ →</a></p>
             </div>
-            <div class="contact-methods">
-                <a href="mailto:harmonyastroapp@gmail.com" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Us</h3>
-                    <p>harmonyastroapp@gmail.com</p>
-                </a>
-                <a href="https://twitter.com/harmonyastro" class="contact-card" target="_blank" rel="noopener">
-                    <div class="contact-icon">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <h3>Follow Us</h3>
-                    <p>@harmonyastro</p>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="public/images/icons/app-icon.png" alt="Skymap" class="footer-logo">
-                    <span>Skymap</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#features">Features</a>
-                    <a href="#screenshots">Screenshots</a>
-                    <a href="#privacy">Privacy</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-legal">
-                    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Terms of Use</a>
-                    <span class="divider">•</span>
-                    <a href="#privacy">Privacy Policy</a>
-                </div>
-                <p class="copyright">&copy; 2025 Skymap. All rights reserved.</p>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="public/images/icons/app-icon.png" alt="" class="footer-logo">
+                <span class="footer-title">Skymap</span>
+                <p class="footer-tag">Made for looking up.</p>
             </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <p class="footer-h">Product</p>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#tonight">Tonight's Sky</a></li>
+                        <li><a href="#science">Science</a></li>
+                        <li><a href="#screens">Screens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-h">Studio</p>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://harmonyastroapps.github.io/">More apps</a></li>
+                        <li><a href="mailto:harmonyastroapp@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-h">Legal</p>
+                    <ul>
+                        <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-base">
+            <p>© <span id="year">2026</span> HarmonyAstroApps · Built under a dark sky.</p>
         </div>
     </footer>
 
     <script src="src/scripts/main.js"></script>
 </body>
 </html>
-
