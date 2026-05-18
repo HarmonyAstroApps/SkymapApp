@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Premium — Skymap · Create Content, Get Rewarded</title>
+    <meta name="description" content="Create a TikTok, Reel, or YouTube Short about Skymap and earn free premium access. The more views you get, the longer your reward.">
+    <meta name="author" content="HarmonyAstroApps">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://harmonyastroapps.github.io/SkymapApp/earn-premium.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Free Premium — Skymap">
+    <meta property="og:description" content="Create content about Skymap, earn free premium. TikTok, Reels, YouTube Shorts — your choice.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="icon" type="image/png" href="public/images/icons/app-icon.png">
+    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .tier-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        .tier-table th, .tier-table td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .tier-table th { font-family: var(--ff-sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-dust, rgba(255,255,255,0.5)); }
+        .tier-table td { font-family: var(--ff-mono, 'JetBrains Mono', monospace); font-size: 0.95rem; }
+        .tier-table tr:last-child td { border-bottom: none; }
+        .tier-table .views-col { color: var(--accent, #8aaaff); font-weight: 600; }
+        .tier-table .reward-col { color: rgba(255,255,255,0.9); }
+        .tier-table .bonus-row td { background: rgba(138,170,255,0.05); border-radius: 0.5rem; }
+
+        .rules-list { list-style: none; padding: 0; margin: 2rem 0; }
+        .rules-list li { position: relative; padding: 0.75rem 0 0.75rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .rules-list li::before { content: attr(data-num); position: absolute; left: 0; top: 0.75rem; font-family: var(--ff-mono, 'JetBrains Mono', monospace); font-size: 0.8rem; color: var(--accent, #8aaaff); font-weight: 600; }
+
+        .submit-cta { text-align: center; margin: 3rem 0; }
+        .submit-cta .btn { font-size: 1.1rem; padding: 1rem 2.5rem; color: #fff; }
+
+        .platform-tags { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        .platform-tag { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 2rem; padding: 0.4rem 1rem; font-size: 0.85rem; font-family: var(--ff-sans); color: rgba(255,255,255,0.8); }
+    </style>
+</head>
+<body class="page-sub">
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <canvas class="starfield" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="header-sentinel" aria-hidden="true"></div>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="brand">
+                <img src="public/images/icons/app-icon.png" alt="" class="brand-logo">
+                <span class="brand-name">Skymap</span>
+            </a>
+            <ul class="nav-menu" role="list">
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#tonight" class="nav-link">Tonight's Sky</a></li>
+                <li><a href="index.html#science" class="nav-link">Science</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="earn-premium.html" class="nav-link" aria-current="page">Free Premium</a></li>
+            </ul>
+            <a href="index.html#download" class="nav-cta" data-magnetic><span class="btn-label">Get the App</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="drawer-scrim" aria-hidden="true"></div>
+    <nav id="drawer" class="drawer" aria-label="Mobile menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="earn-premium.html">Free Premium</a>
+        <a href="index.html#download" class="drawer-cta">Get the App</a>
+    </nav>
+
+    <main>
+        <section class="sub-hero">
+            <div class="container">
+                <a href="index.html" class="back-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                    Back home
+                </a>
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Creator Program</p>
+                <h1 class="sub-title">
+                    Create content. <em class="italic-accent">Earn premium.</em>
+                </h1>
+                <p class="sub-lede">
+                    Make a TikTok, Instagram Reel, or YouTube Short featuring any of our apps.
+                    The more views you get, the more premium you earn — across all our apps.
+                </p>
+            </div>
+        </section>
+
+        <section class="faq-page">
+            <div class="container prose">
+                <h2>How it works</h2>
+                <p>
+                    Create a video showcasing any HarmonyAstroApps app — a stargazing timelapse with Skymap,
+                    a reaction time challenge with Cowboy Quick Shot, or anything creative you can think of.
+                    Post it on TikTok, Instagram Reels, or YouTube Shorts with a link to the app.
+                    Once you hit the view thresholds below, submit your post and claim your free premium.
+                </p>
+
+                <div class="platform-tags">
+                    <span class="platform-tag">TikTok</span>
+                    <span class="platform-tag">Instagram Reels</span>
+                    <span class="platform-tag">YouTube Shorts</span>
+                </div>
+
+                <h2>Reward tiers</h2>
+                <table class="tier-table">
+                    <thead>
+                        <tr>
+                            <th>Views</th>
+                            <th>Reward</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="views-col">5,000+</td>
+                            <td class="reward-col">1 week of premium</td>
+                        </tr>
+                        <tr>
+                            <td class="views-col">10,000+</td>
+                            <td class="reward-col">1 month of premium</td>
+                        </tr>
+                        <tr>
+                            <td class="views-col">25,000+</td>
+                            <td class="reward-col">3 months of premium</td>
+                        </tr>
+                        <tr>
+                            <td class="views-col">100,000+</td>
+                            <td class="reward-col">6 months of premium</td>
+                        </tr>
+                        <tr class="bonus-row">
+                            <td class="views-col">1,000,000+</td>
+                            <td class="reward-col">1 year of premium</td>
+                        </tr>
+                        <tr class="bonus-row">
+                            <td class="views-col">2,000,000+</td>
+                            <td class="reward-col">1 year of premium + 1 year on one other app of your choice</td>
+                        </tr>
+                        <tr class="bonus-row">
+                            <td class="views-col">5,000,000+</td>
+                            <td class="reward-col">1 year of premium on 3 apps of your choice</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>The rules</h2>
+                <ul class="rules-list">
+                    <li data-num="01">Your post must include an accessible link to the app — in your bio, video description, or pinned comment. Viewers should be able to find and download the app within one tap.</li>
+                    <li data-num="02">Your post must remain live for the entire duration of your reward. If you delete it, the premium gets revoked.</li>
+                    <li data-num="03">Rewards are based on the highest verified view count within 30 days of your first submission. You can resubmit for a higher tier during that window.</li>
+                    <li data-num="04">One reward per post. You earn the highest tier your video qualifies for, not a combination of tiers.</li>
+                    <li data-num="05">Content must be original and feature one of our apps. The content style is entirely up to you.</li>
+                </ul>
+
+                <h2>Submit your content</h2>
+                <p>
+                    Once your post hits a view threshold, fill out the form below with the link to your
+                    post. We'll verify the view count and send you a premium activation code via email.
+                </p>
+
+                <div class="submit-cta">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeav8QDa2w1uqA_UpOr4QS1cIrG2G69Dz8UALO3j2JPsfoT6A/viewform" target="_blank" rel="noopener" class="btn btn--primary btn--large" data-magnetic>
+                        <span class="btn-label">Submit Your Content</span>
+                    </a>
+                </div>
+
+                <h2>FAQ</h2>
+
+                <p><strong>Can I submit the same post multiple times?</strong></p>
+                <p>
+                    Yes. If your video grows past the next tier within 30 days of your first submission,
+                    resubmit the form and we'll upgrade your reward to the higher tier. After 30 days,
+                    the tier is locked based on your view count at that time.
+                </p>
+
+                <p><strong>Which apps are eligible?</strong></p>
+                <p>
+                    Any app by HarmonyAstroApps — Skymap, Cowboy Quick Shot, Flight Mode Chat,
+                    Voice Calculator, Voice Clock, or Batchly.
+                </p>
+
+                <p><strong>Where should the app link go?</strong></p>
+                <p>
+                    Wherever your platform allows clickable links — typically your bio (TikTok, Instagram)
+                    or the video description (YouTube). A pinned comment also works.
+                </p>
+
+                <p style="font-size: 0.85rem; color: var(--ink-dust, rgba(255,255,255,0.5)); margin-top: 2rem;">
+                    Terms and conditions may be updated at any time.
+                </p>
+
+                <hr>
+
+                <p style="font-style: italic; color: var(--ink-dust);">
+                    Questions? Reach us at <a href="mailto:harmonyastroapp@gmail.com">harmonyastroapp@gmail.com</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="sub-cta">
+            <div class="container reveal">
+                <h2 class="band-title">Ready to <em class="italic-accent">create?</em></h2>
+                <div class="hero-cta hero-cta--center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeav8QDa2w1uqA_UpOr4QS1cIrG2G69Dz8UALO3j2JPsfoT6A/viewform" target="_blank" rel="noopener" class="btn btn--primary" data-magnetic>
+                        <span class="btn-label">Submit Your Content</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="public/images/icons/app-icon.png" alt="" class="footer-logo">
+                <span class="footer-title">Skymap</span>
+                <p class="footer-tag">Made for looking up.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <p class="footer-h">Product</p>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#tonight">Tonight's Sky</a></li>
+                        <li><a href="index.html#science">Science</a></li>
+                        <li><a href="earn-premium.html">Free Premium</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-h">Studio</p>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="mailto:harmonyastroapp@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-h">Legal</p>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-base">
+            <p>© <span id="year">2026</span> HarmonyAstroApps · Built under a dark sky.</p>
+        </div>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>
